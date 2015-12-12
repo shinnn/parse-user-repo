@@ -1,0 +1,36 @@
+{
+  "name": "parse-user-repo",
+  "version": "1.0.0",
+  "description": "Parse a username/repo string",
+  "repository": "shinnn/parse-user-repo",
+  "author": "Shinnosuke Watanabe (https://github.com/shinnn)",
+  "scripts": {
+    "pretest": "eslint --fix --config @shinnn browser.js index.js test.js",
+    "test": "node --strong_mode --throw-deprecation --track-heap-objects test.js | tap-spec",
+    "coverage": "node --strong_mode node_modules/.bin/istanbul cover test.js"
+  },
+  "license": "MIT",
+  "files": [
+    "index.js"
+  ],
+  "keywords": [
+    "string",
+    "user",
+    "username",
+    "repo",
+    "repository",
+    "parse",
+    "object",
+    "github",
+    "shorthand",
+    "browser",
+    "client-side"
+  ],
+  "devDependencies": {
+    "@shinnn/eslint-config": "^1.4.0",
+    "eslint": "^1.10.3",
+    "istanbul": "^0.4.1",
+    "tap-spec": "^4.1.1",
+    "tape": "^4.4.0"
+  }
+}
