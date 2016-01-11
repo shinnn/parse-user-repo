@@ -1,5 +1,7 @@
 'use strong';
 
+const requireFromString = require('require-from-string');
+const rollup = require('rollup');
 const test = require('tape');
 
 function runTest(description, main) {
@@ -71,3 +73,7 @@ require('./' + require('./bower.json').main);
 
 runTest('require(\'parse-user-repo\')', require('.'));
 runTest('window.parseUserRepo', global.window.parseUserRepo);
+
+rollup.rollup({entry: require('./package.json')['jsnext:main']}).then(bundle => {
+  runTest('Module exports', requireFromString(bundle.generate({format: 'cjs'}).code));
+});
