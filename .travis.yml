@@ -3,7 +3,5 @@ branches:
 dist: xenial
 language: node_js
 node_js: node
-after_script:
-  - npm install istanbul-coveralls
-  - npm run-script coverage
-  - node node_modules/.bin/istanbul-coveralls
+cache: npm
+after_success: node_modules/.bin/nyc report | npx coveralls
