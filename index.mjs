@@ -1,15 +1,12 @@
-'use strict';
-
-var appendType = require('append-type');
-
 /*!
 * parse-user-repo | MIT (c) Shinnosuke Watanabe
 * https://github.com/shinnn/parse-user-repo
 */
+import appendType from 'append-type';
 
 var ERR = 'Expected a <string> in the form "username/repo" e.g. isaacs/minimatch';
 
-module.exports = function parseUserRepo(str) {
+export default function parseUserRepo(str) {
 	if (typeof str !== 'string') {
 		throw new TypeError(ERR + ', but got a non-string value ' + appendType(str) + '.');
 	}
