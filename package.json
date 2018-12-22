@@ -1,6 +1,6 @@
 {
 	"name": "parse-user-repo",
-	"version": "2.0.0-1",
+	"version": "2.0.0",
 	"description": "Parse a username/repo string",
 	"repository": "shinnn/parse-user-repo",
 	"author": "Shinnosuke Watanabe (https://github.com/shinnn)",
