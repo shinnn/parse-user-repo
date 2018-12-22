@@ -33,6 +33,4 @@ parseUserRepo('gohugoio/hugo'); //=> {username: 'gohugoio', repo: 'hugo'}
 
 ## License
 
-Copyright (c) 2015 - 2018 [Shinnosuke Watanabe](https://github.com/shinnn)
-
-Licensed under [the MIT License](./LICENSE).
+[ISC License](./LICENSE) © 2018 Shinnosuke Watanabe

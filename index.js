@@ -3,8 +3,8 @@
 var appendType = require('append-type');
 
 /*!
-* parse-user-repo | MIT (c) Shinnosuke Watanabe
-* https://github.com/shinnn/parse-user-repo
+ * parse-user-repo | ISC (c) Shinnosuke Watanabe
+ * https://github.com/shinnn/parse-user-repo
 */
 
 var ERR = 'Expected a <string> in the form "username/repo" e.g. isaacs/minimatch';

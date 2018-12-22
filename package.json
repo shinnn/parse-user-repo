@@ -4,7 +4,7 @@
 	"description": "Parse a username/repo string",
 	"repository": "shinnn/parse-user-repo",
 	"author": "Shinnosuke Watanabe (https://github.com/shinnn)",
-	"license": "MIT",
+	"license": "ISC",
 	"scripts": {
 		"prebuild": "eslint .",
 		"build": "rollup --config=node:module",

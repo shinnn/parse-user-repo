@@ -1,6 +1,6 @@
 /*!
-* parse-user-repo | MIT (c) Shinnosuke Watanabe
-* https://github.com/shinnn/parse-user-repo
+ * parse-user-repo | ISC (c) Shinnosuke Watanabe
+ * https://github.com/shinnn/parse-user-repo
 */
 import appendType from 'append-type';
 
